@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "VPNexues Delivery Partner",
+    "slug": "vpnexues-delivery-partner",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#052116",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.vpnexues.deliverypartner",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Used to take photo proof of delivery.",
+        "NSPhotoLibraryUsageDescription": "Used to attach delivery proof photos.",
+        "NSLocationWhenInUseUsageDescription": "Used to share your live location with support in an emergency."
+      }
+    },
+    "android": {
+      "package": "com.vpnexues.deliverypartner",
+      "permissions": ["CAMERA", "ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    },
+    "plugins": [
+      ["expo-image-picker", { "cameraPermission": "Used to take photo proof of delivery." }],
+      ["expo-location", { "locationWhenInUsePermission": "Used to share your live location with support in an emergency." }]
+    ]
+  }
+}
